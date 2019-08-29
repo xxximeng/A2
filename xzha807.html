@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>CS@Uoa</title>
+   <link rel="icon" href="http://redsox.uoa.auckland.ac.nz/ups/logo-115x115.png"/>
+   <link rel="stylesheet" type="text/css" href="xzha807.css"/>
+   <script src="xzha807.js"></script>
+</head>
+<body class='background'>
+   <img style="width:10%"; alt="logo" src="http://redsox.uoa.auckland.ac.nz/ups/logo.svg"/>
+   <nav>
+      <table style="width: 100%;">
+         <tr>
+            <td id="Home" class="center" onclick="showHome();">
+               Home
+            </td>
+            <td id="Courses" class="center" onclick="showCourses();">
+               Courses
+            </td>
+            <td id="People" class="center" onclick="showPeople();">
+               People
+            </td>
+			<td id="Notices" class="center" onclick="showNotices();">
+               Notices
+            </td>
+			<td id="News" class="center" onclick="showNews();">
+               News
+            </td>
+			<td id="Comments" class="center" onclick="showComments();">
+               Comments
+            </td>
+         </tr>
+      </table>
+      <hr />
+      <hr />
+   </nav>
+   <div id="SectionHome">
+      <section>
+		 <h1>Computer Science @ UoA</h1>
+		 <hr>
+         <p>
+		 Welcome to New Zealand's leading computer science department.
+		 We pride ourselves on the excellence of our staff and our students.
+         </p>
+		 <img style="width:100%"; alt="logo" 
+		 src="https://www.radionz.co.nz/assets/news/88747/four_col_uni_of_auckland.jpg?1478597590"
+		 />
+		 <hr>
+		 <p class="footer">
+		 Copyright &copy; The university of Auckland
+		 </p>
+      </section>
+   </div>
+   <div id="SectionCourses">
+      <section>
+         <p>
+         <h1>Courses</h1>
+		 <hr>  
+		 <table id="showCourses"></table>
+         </p>
+      </section>
+   </div>
+   <div id="SectionPeople">
+      <section>
+         <p>
+         <h1>People</h1> 
+		 <hr>  
+		 <table id="showPeople"></table>
+         </p>
+      </section>
+   </div>
+   <div id="SectionNotices">
+      <section>
+         <p>
+		 <h1>Notices</h1> 
+		 <hr>  
+		 <table id="showNotices"></table>
+         </p>
+      </section>
+   </div>
+   <div id="SectionNews">
+      <section>
+         <p>
+         <h1>News</h1> 
+		 <hr>  
+		 <table id="showNews"></table>   
+         </p>
+      </section>
+   </div>
+   <div id="SectionComments">
+      <section>
+       
+         <h1>Comments</h1> 
+		 <hr> 
+		 <p>Please sign our guest book. Your comments are greatly appreciated.</p>
+		 <form action="" method="post">
+			Comment: <br>
+			<input type="text" id="comment" style="height:100px; width:100%"><br>
+			Your name: <br>
+			<input type="text" id="name" style="width:100%"><br>
+			<button type="button" onclick="postComments();">Submit</button>
+		 </form>
+		 <hr> 
+		 <p>Recent Entries</p>
+		 <iframe src="http://redsox.uoa.auckland.ac.nz/ups/UniProxService.svc/htmlcomments" width="100%">
+		 </iframe> 
+
+      </section>
+   </div>
+   <div id="SectionModal" class="modal">
+		<div class="content">
+			<p>
+			<h1>Course Schedule</h1> 
+		    <hr>  
+		    <table id="showSchedules"></table>   
+		    </p>
+		</div>
+	</div>
+</body>
+</html>
